@@ -29,3 +29,30 @@ const myFunction = function(){
 }
 
 console.log(typeof outsideTemp);
+
+
+//  +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (primitive), Heap (Non-primitive )
+
+let myYoutubename = "hiteshchoudharydotcom"
+
+let anothername = myYoutubename
+anothername = " chaiaurcode"
+
+console.log(myYoutubename); // hiteshchoudharydotcom
+console.log(anothername);  // chaiaurcode
+
+//heap
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email); //hitesh@google.com
+console.log(userOne.email); // hitesh@google.com
